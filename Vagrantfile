@@ -6,11 +6,10 @@ require 'json'
 VAGRANTFILE_API_VERSION = '2'.freeze
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  vagrant_home = '/home/vagrant'
   config.vm.box = 'ubuntu/trusty64'
 
   config.vm.provider 'virtualbox' do |vb|
-    vb.name = 'predix-ecdemo-box'
+    vb.name = 'predix-ec-configurator-box'
     vb.memory = '2048'
   end
 
@@ -47,7 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision 'shell', path: 'scripts/provision.sh'
   config.vm.provision 'file',
                       source: 'config.json',
-                      destination: File.join(vagrant_home, 'config.json')
+                      destination: File.join('/home/vagrant', 'config.json')
 
   # Do it everytime you run the VM
   config.trigger.after :up do
