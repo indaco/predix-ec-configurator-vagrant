@@ -14,7 +14,7 @@ cp /home/vagrant/config.json $GOPATH/src/github.com/indaco/predix-ec-configurato
 
 cd $PREDIX_EC_CONFIGURATOR_HOME/
 echo '>>> Starting predix-ec-configurator'
-nohup ./predix-ec-configurator > $VAGRANT_HOME/predix-ec-configurator-output.log 2>&1&
+nohup ./predix-ec-configurator --vagrant true > $VAGRANT_HOME/predix-ec-configurator-output.log 2>&1&
 
 # 'Starting nginx'
 sudo service nginx restart

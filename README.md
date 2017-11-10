@@ -52,12 +52,7 @@ $ vagrant up
 
 Once the setup is finished, open a browser window at `http://localhost:8080` and start configuring your scenario.
 
-When you have all generated, copy the `output` folder from the VM to your local machine.
-
-- SSH into VM `vagrant ssh`
-- Execute the following script `source /vagrant/scripts/copy_output.sh`
-
-You should now see what you get from the app into the `output` folder on your local machine.
+When your scenario configuration is finished, you should see what you get from the app into the `output` folder on your local machine.
 
 Now, you follow the instruction as reported on the screen and on the generated markdown file.
 
