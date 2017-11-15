@@ -68,6 +68,10 @@ go get
 echo '>>> Building predix-ec-configurator'
 go build
 
+# Create a service
+sudo cp /vagrant/scripts/ec-configurator-service.sh /etc/init.d/ec-configurator-service
+sudo chmod 775 /etc/init.d/ec-configurator-service
+
 ### Installing Nginx
 echo '>>> Installing Nginx'
 sudo apt-get install -y nginx
