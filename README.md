@@ -1,6 +1,6 @@
 # Predix Enterprise Connect Configurator - Vagrant Box
 
-Vagrant `ubuntu/trusty64` box setup with all you need to use [predix-ec-configurator](https://github.com/indaco/predix-ec-configurator).
+Vagrant `ubuntu/trusty64` box setup with all you need to use [predix-ec-configurator](https://github.com/indaco/predix-ec-configurator):
 
 - Git
 - Cloud Foundry CLI
@@ -19,7 +19,7 @@ $ vagrant plugin install vagrant-proxyconf
 $ vagrant plugin install vagrant-triggers
 ```
 
-**Note:** if you skip this step and try to build the VM, plugins will be automatically installed, but you will get an error and need to re-run the build to fix it.
+**Note:** if you skip those steps and try to build the VM, plugins will be automatically installed, but you will get an error and need to re-run the build to fix it.
 
 Clone this repos:
 
@@ -66,7 +66,6 @@ Now, you follow the instruction as reported on the screen and on the generated m
   Database: ecdemodb
   Username: ecdemouser
   Password: ecdemo
-  `
   ```
 
 2. A new _ecdemodb_ database and a sample _playground_ table with dummy data have already been created.
